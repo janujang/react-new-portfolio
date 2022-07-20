@@ -1,0 +1,97 @@
+@import "../../global.module.scss";
+
+.home {
+  background-color: $homeBgColor;
+  // background-image: url("../../../public/assets/images/Carousel.png");
+  // background-position: center;
+  // background-size: cover;
+
+  vertical-align: middle;
+  width: 100%;
+  height: calc(100vh - 70px);
+  scroll-snap-align: start;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // &::before {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   background: rgba(0, 0, 0, 0.5);
+  //   content: "";
+  // }
+
+  // .left {
+  //   flex: 0.5;
+  //   overflow: hidden;
+
+  //   // background-color: lightpink;
+
+  //   .imgContainer {
+  //     width: 700px;
+  //     height: 100%;
+  //     background-color: crimson;
+  //     border-radius: 50%;
+  //     display: flex;
+  //     align-items: center;
+  //     justify-content: center;
+  //     float: right;
+  //     img {
+  //       height: 90%;
+  //     }
+  //   }
+  // }
+  .container {
+    // flex: 0.5;
+    // background-color: pink;
+    // position: relative;
+    .introText {
+      // width: 100%;
+      // height: 100%;
+      // margin-left: 50px;
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: center;
+
+      h1 {
+        font-size: 60px;
+        margin: 10px 0;
+      }
+
+      h2 {
+        font-size: 35px;
+      }
+
+      h3 {
+        font-size: 30px;
+
+        span {
+          font-size: inherit;
+          color: crimson;
+        }
+      }
+    }
+
+    a {
+      position: absolute;
+      bottom: 0px;
+      left: 45%;
+
+      .icon {
+        font-size: 50px;
+        color: black;
+        animation: arrowBlink 2s infinite;
+      }
+
+      @keyframes arrowBlink {
+        100% {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}

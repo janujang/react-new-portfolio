@@ -1,0 +1,8 @@
+@import "../../global.module.scss";
+
+.skills {
+  background-color: $skillsBgColor;
+  width: 100%;
+  height: calc(100vh - 70px);
+  scroll-snap-align: start;
+}
